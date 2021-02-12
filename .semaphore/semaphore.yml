@@ -1,0 +1,414 @@
+version: v1.0
+name: Initial Pipeline
+agent:
+  machine:
+    type: e1-standard-2
+    os_image: ubuntu1804
+blocks:
+  - name: 'Block #1'
+    task:
+      jobs:
+        - name: 'Job #1'
+          commands:
+            - ls
+promotions:
+  - name: Promotion 1
+    pipeline_file: pipeline_2.yml
+    auto_promote:
+      when: branch = 'main'
+  - name: Promotion 2
+    pipeline_file: pipeline_3.yml
+    auto_promote:
+      when: branch = 'main'
+  - name: Promotion 3
+    pipeline_file: pipeline_4.yml
+    auto_promote:
+      when: branch = 'main'
+  - name: Promotion 4
+    pipeline_file: pipeline_5.yml
+    auto_promote:
+      when: branch = 'main'
+  - name: Promotion 45
+    pipeline_file: pipeline_5.yml
+    auto_promote:
+      when: branch = 'main'
+  - name: Promotiona 1
+    pipeline_file: pipeline_2.yml
+    auto_promote:
+      when: branch = 'main'
+  - name: Promotiona 2
+    pipeline_file: pipeline_3.yml
+    auto_promote:
+      when: branch = 'main'
+  - name: Promotiona 3
+    pipeline_file: pipeline_4.yml
+    auto_promote:
+      when: branch = 'main'
+  - name: Promotiona 4
+    pipeline_file: pipeline_5.yml
+    auto_promote:
+      when: branch = 'main'
+  - name: Promotiona 45
+    pipeline_file: pipeline_5.yml
+    auto_promote:
+      when: branch = 'main'
+  - name: Promotionba 1
+    pipeline_file: pipeline_2.yml
+    auto_promote:
+      when: branch = 'main'
+  - name: Promotionba 2
+    pipeline_file: pipeline_3.yml
+    auto_promote:
+      when: branch = 'main'
+  - name: Promotionba 3
+    pipeline_file: pipeline_4.yml
+    auto_promote:
+      when: branch = 'main'
+  - name: Promotionba 4
+    pipeline_file: pipeline_5.yml
+    auto_promote:
+      when: branch = 'main'
+  - name: Promotionba 45
+    pipeline_file: pipeline_5.yml
+    auto_promote:
+      when: branch = 'main'
+  - name: Promotioncba 1
+    pipeline_file: pipeline_2.yml
+    auto_promote:
+      when: branch = 'main'
+  - name: Promotioncba 2
+    pipeline_file: pipeline_3.yml
+    auto_promote:
+      when: branch = 'main'
+  - name: Promotioncba 3
+    pipeline_file: pipeline_4.yml
+    auto_promote:
+      when: branch = 'main'
+  - name: Promotioncba 4
+    pipeline_file: pipeline_5.yml
+    auto_promote:
+      when: branch = 'main'
+  - name: Promotioncba 45
+    pipeline_file: pipeline_5.yml
+    auto_promote:
+      when: branch = 'main'
+  - name: Promotioncsjcs 1
+    pipeline_file: pipeline_2.yml
+    auto_promote:
+      when: branch = 'main'
+  - name: Promotioncsjcs 2
+    pipeline_file: pipeline_3.yml
+    auto_promote:
+      when: branch = 'main'
+  - name: Promotioncsjcs 3
+    pipeline_file: pipeline_4.yml
+    auto_promote:
+      when: branch = 'main'
+  - name: Promotioncsjcs 4
+    pipeline_file: pipeline_5.yml
+    auto_promote:
+      when: branch = 'main'
+  - name: Promotioncsjcs 45
+    pipeline_file: pipeline_5.yml
+    auto_promote:
+      when: branch = 'main'
+  - name: Promotioncsjcsa 1
+    pipeline_file: pipeline_2.yml
+    auto_promote:
+      when: branch = 'main'
+  - name: Promotioncsjcsa 2
+    pipeline_file: pipeline_3.yml
+    auto_promote:
+      when: branch = 'main'
+  - name: Promotioncsjcsa 3
+    pipeline_file: pipeline_4.yml
+    auto_promote:
+      when: branch = 'main'
+  - name: Promotioncsjcsa 4
+    pipeline_file: pipeline_5.yml
+    auto_promote:
+      when: branch = 'main'
+  - name: Promotioncsjcsa 45
+    pipeline_file: pipeline_5.yml
+    auto_promote:
+      when: branch = 'main'
+  - name: Promotioncsjcsba 1
+    pipeline_file: pipeline_2.yml
+    auto_promote:
+      when: branch = 'main'
+  - name: Promotioncsjcsba 2
+    pipeline_file: pipeline_3.yml
+    auto_promote:
+      when: branch = 'main'
+  - name: Promotioncsjcsba 3
+    pipeline_file: pipeline_4.yml
+    auto_promote:
+      when: branch = 'main'
+  - name: Promotioncsjcsba 4
+    pipeline_file: pipeline_5.yml
+    auto_promote:
+      when: branch = 'main'
+  - name: Promotioncsjcsba 45
+    pipeline_file: pipeline_5.yml
+    auto_promote:
+      when: branch = 'main'
+  - name: Promotioncsjcscba 1
+    pipeline_file: pipeline_2.yml
+    auto_promote:
+      when: branch = 'main'
+  - name: Promotioncsjcscba 2
+    pipeline_file: pipeline_3.yml
+    auto_promote:
+      when: branch = 'main'
+  - name: Promotioncsjcscba 3
+    pipeline_file: pipeline_4.yml
+    auto_promote:
+      when: branch = 'main'
+  - name: Promotioncsjcscba 4
+    pipeline_file: pipeline_5.yml
+    auto_promote:
+      when: branch = 'main'
+  - name: Promotioncsjcscba 45
+    pipeline_file: pipeline_5.yml
+    auto_promote:
+      when: branch = 'main'
+  - name: Promotioncsjcsca 1
+    pipeline_file: pipeline_2.yml
+    auto_promote:
+      when: branch = 'main'
+  - name: Promotioncsjcsca 2
+    pipeline_file: pipeline_3.yml
+    auto_promote:
+      when: branch = 'main'
+  - name: Promotioncsjcsca 3
+    pipeline_file: pipeline_4.yml
+    auto_promote:
+      when: branch = 'main'
+  - name: Promotioncsjcsca 4
+    pipeline_file: pipeline_5.yml
+    auto_promote:
+      when: branch = 'main'
+  - name: Promotioncsjcsca 45
+    pipeline_file: pipeline_5.yml
+    auto_promote:
+      when: branch = 'main'
+  - name: Promotioncsjcscaa 1
+    pipeline_file: pipeline_2.yml
+    auto_promote:
+      when: branch = 'main'
+  - name: Promotioncsjcscaa 2
+    pipeline_file: pipeline_3.yml
+    auto_promote:
+      when: branch = 'main'
+  - name: Promotioncsjcscaa 3
+    pipeline_file: pipeline_4.yml
+    auto_promote:
+      when: branch = 'main'
+  - name: Promotioncsjcscaa 4
+    pipeline_file: pipeline_5.yml
+    auto_promote:
+      when: branch = 'main'
+  - name: Promotioncsjcscaa 45
+    pipeline_file: pipeline_5.yml
+    auto_promote:
+      when: branch = 'main'
+  - name: Promotioncsjcscaba 1
+    pipeline_file: pipeline_2.yml
+    auto_promote:
+      when: branch = 'main'
+  - name: Promotioncsjcscaba 2
+    pipeline_file: pipeline_3.yml
+    auto_promote:
+      when: branch = 'main'
+  - name: Promotioncsjcscaba 3
+    pipeline_file: pipeline_4.yml
+    auto_promote:
+      when: branch = 'main'
+  - name: Promotioncsjcscaba 4
+    pipeline_file: pipeline_5.yml
+    auto_promote:
+      when: branch = 'main'
+  - name: Promotioncsjcscaba 45
+    pipeline_file: pipeline_5.yml
+    auto_promote:
+      when: branch = 'main'
+  - name: Promotioncsjcscacba 1
+    pipeline_file: pipeline_2.yml
+    auto_promote:
+      when: branch = 'main'
+  - name: Promotioncsjcscacba 2
+    pipeline_file: pipeline_3.yml
+    auto_promote:
+      when: branch = 'main'
+  - name: Promotioncsjcscacba 3
+    pipeline_file: pipeline_4.yml
+    auto_promote:
+      when: branch = 'main'
+  - name: Promotioncsjcscacba 4
+    pipeline_file: pipeline_5.yml
+    auto_promote:
+      when: branch = 'main'
+  - name: Promotioncsjcscacba 45
+    pipeline_file: pipeline_5.yml
+    auto_promote:
+      when: branch = 'main'
+  - name: Promotioncs 1
+    pipeline_file: pipeline_2.yml
+    auto_promote:
+      when: branch = 'main'
+  - name: Promotioncs 2
+    pipeline_file: pipeline_3.yml
+    auto_promote:
+      when: branch = 'main'
+  - name: Promotioncs 3
+    pipeline_file: pipeline_4.yml
+    auto_promote:
+      when: branch = 'main'
+  - name: Promotioncs 4
+    pipeline_file: pipeline_5.yml
+    auto_promote:
+      when: branch = 'main'
+  - name: Promotioncs 45
+    pipeline_file: pipeline_5.yml
+    auto_promote:
+      when: branch = 'main'
+  - name: Promotioncsa 1
+    pipeline_file: pipeline_2.yml
+    auto_promote:
+      when: branch = 'main'
+  - name: Promotioncsa 2
+    pipeline_file: pipeline_3.yml
+    auto_promote:
+      when: branch = 'main'
+  - name: Promotioncsa 3
+    pipeline_file: pipeline_4.yml
+    auto_promote:
+      when: branch = 'main'
+  - name: Promotioncsa 4
+    pipeline_file: pipeline_5.yml
+    auto_promote:
+      when: branch = 'main'
+  - name: Promotioncsa 45
+    pipeline_file: pipeline_5.yml
+    auto_promote:
+      when: branch = 'main'
+  - name: Promotioncsba 1
+    pipeline_file: pipeline_2.yml
+    auto_promote:
+      when: branch = 'main'
+  - name: Promotioncsba 2
+    pipeline_file: pipeline_3.yml
+    auto_promote:
+      when: branch = 'main'
+  - name: Promotioncsba 3
+    pipeline_file: pipeline_4.yml
+    auto_promote:
+      when: branch = 'main'
+  - name: Promotioncsba 4
+    pipeline_file: pipeline_5.yml
+    auto_promote:
+      when: branch = 'main'
+  - name: Promotioncsba 45
+    pipeline_file: pipeline_5.yml
+    auto_promote:
+      when: branch = 'main'
+  - name: Promotioncscba 1
+    pipeline_file: pipeline_2.yml
+    auto_promote:
+      when: branch = 'main'
+  - name: Promotioncscba 2
+    pipeline_file: pipeline_3.yml
+    auto_promote:
+      when: branch = 'main'
+  - name: Promotioncscba 3
+    pipeline_file: pipeline_4.yml
+    auto_promote:
+      when: branch = 'main'
+  - name: Promotioncscba 4
+    pipeline_file: pipeline_5.yml
+    auto_promote:
+      when: branch = 'main'
+  - name: Promotioncscba 45
+    pipeline_file: pipeline_5.yml
+    auto_promote:
+      when: branch = 'main'
+  - name: Promotioncsca 1
+    pipeline_file: pipeline_2.yml
+    auto_promote:
+      when: branch = 'main'
+  - name: Promotioncsca 2
+    pipeline_file: pipeline_3.yml
+    auto_promote:
+      when: branch = 'main'
+  - name: Promotioncsca 3
+    pipeline_file: pipeline_4.yml
+    auto_promote:
+      when: branch = 'main'
+  - name: Promotioncsca 4
+    pipeline_file: pipeline_5.yml
+    auto_promote:
+      when: branch = 'main'
+  - name: Promotioncsca 45
+    pipeline_file: pipeline_5.yml
+    auto_promote:
+      when: branch = 'main'
+  - name: Promotioncscaa 1
+    pipeline_file: pipeline_2.yml
+    auto_promote:
+      when: branch = 'main'
+  - name: Promotioncscaa 2
+    pipeline_file: pipeline_3.yml
+    auto_promote:
+      when: branch = 'main'
+  - name: Promotioncscaa 3
+    pipeline_file: pipeline_4.yml
+    auto_promote:
+      when: branch = 'main'
+  - name: Promotioncscaa 4
+    pipeline_file: pipeline_5.yml
+    auto_promote:
+      when: branch = 'main'
+  - name: Promotioncscaa 45
+    pipeline_file: pipeline_5.yml
+    auto_promote:
+      when: branch = 'main'
+  - name: Promotioncscaba 1
+    pipeline_file: pipeline_2.yml
+    auto_promote:
+      when: branch = 'main'
+  - name: Promotioncscaba 2
+    pipeline_file: pipeline_3.yml
+    auto_promote:
+      when: branch = 'main'
+  - name: Promotioncscaba 3
+    pipeline_file: pipeline_4.yml
+    auto_promote:
+      when: branch = 'main'
+  - name: Promotioncscaba 4
+    pipeline_file: pipeline_5.yml
+    auto_promote:
+      when: branch = 'main'
+  - name: Promotioncscaba 45
+    pipeline_file: pipeline_5.yml
+    auto_promote:
+      when: branch = 'main'
+  - name: Promotioncscacba 1
+    pipeline_file: pipeline_2.yml
+    auto_promote:
+      when: branch = 'main'
+  - name: Promotioncscacba 2
+    pipeline_file: pipeline_3.yml
+    auto_promote:
+      when: branch = 'main'
+  - name: Promotioncscacba 3
+    pipeline_file: pipeline_4.yml
+    auto_promote:
+      when: branch = 'main'
+  - name: Promotioncscacba 4
+    pipeline_file: pipeline_5.yml
+    auto_promote:
+      when: branch = 'main'
+  - name: Promotioncscacba 45
+    pipeline_file: pipeline_5.yml
+    auto_promote:
+      when: branch = 'main'

